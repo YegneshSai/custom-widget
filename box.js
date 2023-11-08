@@ -75,6 +75,9 @@ console.log("in mainnnnnnnnnnnnnnnnnnnn");
 			if ("opacity" in changedProperties) {
 				this.style["opacity"] = changedProperties["opacity"];
 			}
+			if ("data" in changedProperties) {
+				console.log("can do change");
+			}
 		}
 	}
 
