@@ -10,7 +10,7 @@
 						<td><input id="styling_color" type="text" size="40" maxlength="40"></td>
 					</tr>
 				</table>
-				<input type="submit" style="display:none;">
+				<input type="submit" style="display:block;">
 			</fieldset>
 		</form>
 	`;
