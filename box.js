@@ -77,6 +77,20 @@ console.log("in mainnnnnnnnnnnnnnnnnnnn");
 			}
 			if ("data" in changedProperties) {
 				console.log("can do change");
+				console.log("inside insertion");
+			try{
+				const list_acc= document.createElement("ul");
+				const ele= document.createElement("li");
+				let acc = document.createTextNode(changedProperties["data"]);
+				ele.appendChild(acc);
+				ele.appendChild(acc);
+				list_acc.appendChild(ele);
+				shadowRoot.appendChild(list_acc);
+			}
+			catch(err) {
+				console.log("error in insertion");
+				console.log(err);
+			}
 			}
 		}
 	}
