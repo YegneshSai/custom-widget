@@ -29,10 +29,13 @@
 			super(); 
 			let shadowRoot = this.attachShadow({mode: "open"});
 
+			
+console.log("in main");
+			shadowRoot.appendChild(template.content.cloneNode(true));
 			console.log("hii");
 			try{
 				const textnode = document.createTextNode("Water");
-template.appendChild(textnode);
+shadowRoot.appendChild(textnode);
 			
 			}
 			catch(err) {
@@ -41,13 +44,11 @@ template.appendChild(textnode);
 			console.log("heloo");
 			try{
 				const node = document.getElementById("list").lastElementChild;
-			document.getElementById("list").appendChild(node);
+			shadowRoot.getElementById("list").appendChild(node);
 			}
 			catch(err) {
 			console.log(err);
 			}
-
-			shadowRoot.appendChild(template.content.cloneNode(true));
 			this.addEventListener("click", event => {
 				var event = new Event("onClick");
 				this.dispatchEvent(event);
