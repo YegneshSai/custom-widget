@@ -41,22 +41,7 @@
 		get color() {
 			return this._shadowRoot.getElementById("styling_color").value;
 		}
-		insert(element){
-			console.log("inside insertion");
-			try{
-				const list_acc= document.createElement("ul");
-				const ele= document.createElement("li");
-				let acc = document.createTextNode(element);
-				ele.appendChild(acc);
-				ele.appendChild(acc);
-				list_acc.appendChild(ele);
-				shadowRoot.appendChild(list_acc);
-			}
-			catch(err) {
-				console.log("error in insertion");
-				console.log(err);
-			}
-		}
+		
 	}
 
 customElements.define("com-sample-box-styling", BoxStylingPanel);
