@@ -28,7 +28,9 @@
 		constructor() {
 			super(); 
 			let shadowRoot = this.attachShadow({mode: "open"});
-			
+
+			console.log("hiiiiiiiiiiiiiiiiiii");
+			template.body.appendChild("hi");
 			
 
 			shadowRoot.appendChild(template.content.cloneNode(true));
