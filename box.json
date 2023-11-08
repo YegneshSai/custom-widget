@@ -12,21 +12,21 @@
 		{
 			"kind": "main",
 			"tag": 	"com-sample-box",
-			"url": "https://yegneshsai.github.io/custom-widget/box.js",
+			"url": "/box.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
 			"tag": "com-sample-box-styling",
-			"url": "https://yegneshsai.github.io/custom-widget/box_styling.js",
+			"url": "/box_styling.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
 			"tag": "com-sample-box-builder",
-			"url": "https://yegneshsai.github.io/custom-widget/box_builder.js",
+			"url": "/box_builder.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
@@ -36,6 +36,11 @@
 			"type": "string",
 			"description": "Background color",
 			"default": "white"
+		},
+		"data": {
+			"type": "string",
+			"description": "Element to be added",
+			"default": "default"
 		},
 		"opacity": {
 			"type": "number",
@@ -62,6 +67,17 @@
 				}
 			],
 			"body": "this.color = newColor;"
+		},
+		"setData": {
+			"description": "Sets the element in list.",
+			"parameters": [
+				{
+					"name": "newData",
+					"type": "string",
+					"description": "The new Data"
+				}
+			],
+			"body": "this.data = newData;"
 		},
 		"getColor": {
 			"returnType": "string",
