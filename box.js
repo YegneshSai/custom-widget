@@ -13,12 +13,11 @@
 		</style> 
   		<body>
     		<h3>Select in the below list</h3>
-		<form id="list" action="">
+		
   <input type="checkbox" id="SAC Lilly" name="SAC LILLY" value="SAC LILLY">
 					<label for="SAC LILLY">SAC LILLY</label><br>
   			
 			
-		</form>
     		</body>
 	`;
 
