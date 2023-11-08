@@ -13,7 +13,7 @@
 		</style> 
   		<body>
     		<h3>Select in the below list</h3>
-		<h1>testing</h1>
+		
   <input type="checkbox" id="SAC Lilly" name="SAC LILLY" value="SAC LILLY">
 					<label for="SAC LILLY">SAC LILLY</label><br>
 
@@ -28,9 +28,7 @@
 		constructor() {
 			super(); 
 			let shadowRoot = this.attachShadow({mode: "open"});
-			let para = document.createElement("p");
-			para.innerText = "This is a paragraph";
-			template.body.appendChild(para);
+			
 			
 
 			shadowRoot.appendChild(template.content.cloneNode(true));
