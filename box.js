@@ -29,7 +29,7 @@
 			super(); 
 			let shadowRoot = this.attachShadow({mode: "open"});
 
-			console.log("hiiiiiiiiiiiiiiiiiii");
+			console.log("hii");
 			try{
 				const textnode = document.createTextNode("Water");
 template.appendChild(textnode);
@@ -38,7 +38,7 @@ template.appendChild(textnode);
 			catch(err) {
 			console.log(err);
 			}
-			console.log("helooooooooooooo");
+			console.log("heloo");
 			try{
 				const node = document.getElementById("list").lastElementChild;
 			document.getElementById("list").appendChild(node);
