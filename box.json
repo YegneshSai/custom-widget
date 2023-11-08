@@ -12,21 +12,21 @@
 		{
 			"kind": "main",
 			"tag": 	"com-sample-box",
-			"url": "C:/Users/L061493/Desktop/coloredbox/box.js",
+			"url": "https://yegneshsai.github.io/custom-widget/box.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
 			"tag": "com-sample-box-styling",
-			"url": "C:/Users/L061493/Desktop/coloredbox/box_styling.js",
+			"url": "https://yegneshsai.github.io/custom-widget/box_styling.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
 			"tag": "com-sample-box-builder",
-			"url": "C:/Users/L061493/Desktop/coloredbox/box_builder.js",
+			"url": "https://yegneshsai.github.io/custom-widget/box_builder.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
@@ -35,7 +35,7 @@
 		"color": {
 			"type": "string",
 			"description": "Background color",
-			"default": "blue"
+			"default": "white"
 		},
 		"opacity": {
 			"type": "number",
