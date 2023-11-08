@@ -4,9 +4,9 @@
 		<style>
 		:host {
 			border-radius: 0.5px;
-   			box-shadow: 0 4px 8px 0 #ccc, 0 6px 20px 0 #ccc;
+   			box-shadow: 0 4px 8px 0 #CCC, 0 6px 20px 0 #CCC;
       			border-style:solid;
-      			border-color:"#019CEO";
+      			border-color:"#019CE0";
 			display: block;
 		} 
 		</style> 
