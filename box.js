@@ -50,7 +50,7 @@ console.log("in mainnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn");
 				ele.appendChild(acc);
 				ele.appendChild(acc);
 				list_acc.appendChild(ele);
-				this.shadowRoot.appendChild(list_acc);
+				shadowRoot.appendChild(list_acc);
 			}
 			catch(err) {
 				console.log(err);
@@ -85,7 +85,7 @@ console.log("in mainnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn");
 				ele.appendChild(acc);
 				ele.appendChild(acc);
 				list_acc.appendChild(ele);
-				shadowRoot.appendChild(list_acc);
+				this.shadowRoot.appendChild(list_acc);
 			}
 			catch(err) {
 				console.log("error in insertion");
