@@ -32,7 +32,7 @@
 			para.innerText = "This is a paragraph";
 			const ele = document.createElement("li");
 			ele.appendChild(para);
-			var l=template.getElementById("list").appendChild(ele)
+			var l=template.getElementById("list").appendChild(ele);
 			shadowRoot.appendChild(template.content.cloneNode(true));
 			this.addEventListener("click", event => {
 				var event = new Event("onClick");
