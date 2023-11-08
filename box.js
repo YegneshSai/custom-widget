@@ -31,14 +31,17 @@
 
 			console.log("hiiiiiiiiiiiiiiiiiii");
 			try{
-			template.body.appendChild("hi");
+				const textnode = document.createTextNode("Water");
+template.appendChild(textnode);
+			
 			}
 			catch(err) {
 			console.log(err);
 			}
 			console.log("helooooooooooooo");
 			try{
-			document.getElementById("list").appendChild("hi");
+				const node = document.getElementById("list").lastElementChild;
+			document.getElementById("list").appendChild(node);
 			}
 			catch(err) {
 			console.log(err);
