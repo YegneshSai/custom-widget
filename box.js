@@ -10,6 +10,13 @@
 			display: block;
 		} 
 		</style> 
+  		<body>
+    		<h3>Select in the below list</h3>
+      		<ul>
+		<li>hi</li>
+		<li>hello</li>
+		</ul>
+    		</body>
 	`;
 
 	class Box extends HTMLElement {
