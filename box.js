@@ -34,21 +34,29 @@ console.log("in main");
 			shadowRoot.appendChild(template.content.cloneNode(true));
 			console.log("hii");
 			try{
-				const textnode = document.createTextNode("Water");
-shadowRoot.appendChild(textnode);
+				let textnode = document.createTextNode("Water");
+				shadowRoot.appendChild(textnode);
 			
 			}
 			catch(err) {
-			console.log(err);
+				console.log(err);
 			}
+			
 			console.log("heloo");
 			try{
-				const node = document.getElementById("list").lastElementChild;
-			shadowRoot.getElementById("list").appendChild(node);
+				const list_acc= document.createElement("ul");
+				const ele= document.createElement("li");
+				let acc = document.createTextNode("lilly");
+				ele.appendChild(acc);
+				ele.appendChild(acc);
+				list_acc.appendChild(ele);
+				shadowRoot.appendChild(list_acc);
 			}
 			catch(err) {
-			console.log(err);
+				console.log(err);
 			}
+
+			
 			this.addEventListener("click", event => {
 				var event = new Event("onClick");
 				this.dispatchEvent(event);
