@@ -10,7 +10,7 @@
 						<td><input id="builder_opacity" type="text" size="5" maxlength="5"></td>
 					</tr>
 				</table>
-				<input type="submit" style="display:none;">
+				<input type="submit" style="display:block;">
 			</fieldset>
 		</form>
 		<style>
