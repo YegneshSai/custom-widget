@@ -30,8 +30,19 @@
 			let shadowRoot = this.attachShadow({mode: "open"});
 
 			console.log("hiiiiiiiiiiiiiiiiiii");
+			try{
 			template.body.appendChild("hi");
-			
+			}
+			catch(err) {
+			console.log(err);
+			}
+			console.log("helooooooooooooo");
+			try{
+			document.getElementById("list").appendChild("hi");
+			}
+			catch(err) {
+			console.log(err);
+			}
 
 			shadowRoot.appendChild(template.content.cloneNode(true));
 			this.addEventListener("click", event => {
