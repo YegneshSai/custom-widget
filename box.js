@@ -30,7 +30,7 @@
 			let shadowRoot = this.attachShadow({mode: "open"});
 
 			
-console.log("in main");
+console.log("in mainnnnnnnnnnnnnnnnnnnn");
 			shadowRoot.appendChild(template.content.cloneNode(true));
 			console.log("hii");
 			try{
