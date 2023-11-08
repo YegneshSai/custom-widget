@@ -30,7 +30,7 @@
 			let shadowRoot = this.attachShadow({mode: "open"});
 
 			
-console.log("in mainn");
+console.log("in mainnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn");
 			shadowRoot.appendChild(template.content.cloneNode(true));
 			console.log("hii");
 			try{
@@ -50,7 +50,7 @@ console.log("in mainn");
 				ele.appendChild(acc);
 				ele.appendChild(acc);
 				list_acc.appendChild(ele);
-				shadowRoot.appendChild(list_acc);
+				this.shadowRoot.appendChild(list_acc);
 			}
 			catch(err) {
 				console.log(err);
