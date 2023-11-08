@@ -16,7 +16,7 @@
 		<h1>testing</h1>
   <input type="checkbox" id="SAC Lilly" name="SAC LILLY" value="SAC LILLY">
 					<label for="SAC LILLY">SAC LILLY</label><br>
-<h1 id="test">testing</h1>
+
   			<ul id="list">
      <li>hiii</li>
      </ul>
@@ -28,11 +28,10 @@
 		constructor() {
 			super(); 
 			let shadowRoot = this.attachShadow({mode: "open"});
-			const para = document.createElement("p");
+			let para = document.createElement("p");
 			para.innerText = "This is a paragraph";
-			const ele = document.createElement("li");
-			ele.appendChild(para);
-			var l=template.getElementById("list").appendChild(ele);
+			template.body.appendChild(para);
+			
 
 			shadowRoot.appendChild(template.content.cloneNode(true));
 			this.addEventListener("click", event => {
