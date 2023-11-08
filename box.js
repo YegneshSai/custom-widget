@@ -9,13 +9,58 @@
       			border-color:#019CE0;
 			display: block;
 		} 
+  		.collapsible {
+		  background-color: #777;
+		  color: white;
+		  cursor: pointer;
+		  padding: 18px;
+		  width: 100%;
+		  border: none;
+		  text-align: left;
+		  outline: none;
+		  font-size: 15px;
+		}
+		
+		.active, .collapsible:hover {
+		  background-color: #555;
+		}
+		
+		.collapsible:after {
+		  content: '\002B';
+		  color: white;
+		  font-weight: bold;
+		  float: right;
+		  margin-left: 5px;
+		}
+		
+		.active:after {
+		  content: "\2212";
+		}
+		
+		.content {
+		  padding: 0 18px;
+		  max-height: 0;
+		  overflow: hidden;
+		  transition: max-height 0.2s ease-out;
+		  background-color: #f1f1f1;
+		}
 		</style> 
   		<body>
     		<h3>Select in the below list</h3>
-      		<ul>
-		<li>hi</li>
-		<li>hello</li>
-		</ul>
+		<form id="list" action="">
+  			<ul>
+				<input type="checkbox" id="SAC Lilly" name="SAC LILLY" value="SAC LILLY">
+	   			<button class="collapsible">Open Collapsible</button>
+				<label for="SAC LILLY">SAC LILLY</label><br>
+    				<ul class="content">
+					<input type="checkbox" id="SAC Lilly" name="SAC LILLY" value="SAC LILLY">
+					<label for="SAC LILLY">SAC LILLY</label><br>
+		   			<input type="checkbox" id="SAC Lilly" name="SAC LILLY" value="SAC LILLY">
+					<label for="SAC LILLY">SAC LILLY</label><br>
+    				</ul>
+   			</ul>
+			
+		</form>
     		</body>
 	`;
 
